@@ -13,15 +13,15 @@ title Checking libraries...
 echo Checking 'tkinter' (1/4)
 python -c "import tkinter as tk" > nul 2>&1
 if %errorlevel% neq 0 (
-    echo Installing customtkinter...
-    python -m pip install customtkinter > nul
+    echo Installing tkinter...
+    python -m pip install tkinter > nul
 )
 
 echo Checking 'smtplib' (2/4)
 python -c "import smtplib" > nul 2>&1
 if %errorlevel% neq 0 (
-    echo Installing pillow...
-    python -m pip install pillow > nul
+    echo Installing smtplib...
+    python -m pip install smtplib > nul
 )
 
 
